@@ -200,3 +200,48 @@ p {
 .grid-description {
   padding-bottom: 5rem;
 }
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsive-table {
+  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+table {
+  width: 100%;
+  min-width: 360px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.5rem;
+  white-space: nowrap;
+  border: 0.1rem solid var(--light-gray-color);
+  text-align: left;
+}
+
+tfoot td,
+table th {
+  background-color: var(--light-gray-color);
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
