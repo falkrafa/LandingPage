@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -134,7 +135,7 @@ h6 {
 .intro-content {
   display: grid;
   position: relative;
-  top: -8rem;
+  /*top: -8rem;*/
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   min-height: 100vh;
@@ -244,4 +245,76 @@ table caption {
   font-size: 1.6rem;
   text-align: left;
   margin-bottom: 1rem;
+}
+.contact-form {
+  grid-column: span 2;
+}
+.contact-form .form-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  border: none;
+}
+.form-grid legend {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+.form-group {
+  flex: 1 1 32rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: var(--white-color);
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  width: 100%;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px var(--secondary-color);
+}
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.form-group button {
+  border: 0.3rem solid var(--white-color);
+  background: none;
+  color: var(--white-color);
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  border-radius: 30px;
+}
+.form-group button:hover {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+.form-group ::placeholder {
+  color: lightgray;
+}
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.footer a {
+  color: var(--primary-color);
+}
+
+.heart {
+  color: var(--secondary-color);
+}
+.footer p {
+  margin: 0;
+  padding: 3rem;
 }

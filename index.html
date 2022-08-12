@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body class="main-bg">
+  <body>
     <header class="menu white-bg">
       <section class="main-content menu-content">
         <h1><a href="#">LOGO</a></h1>
@@ -24,7 +24,7 @@
             <li><a href="#gallery">gallery</a></li>
             <li><a href="#grid-two">work</a></li>
             <li><a href="#pricing">pricing</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </section>
@@ -252,5 +252,76 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-cont">
+          <h2>CONTACT US</h2>
+          <p>
+            To wrap up January, we are proud to bring you the release of Firefox
+            85. In this version we are bringing you support for the
+            :focus-visible pseudo-class in CSS and associated devtools, and the
+            complete removal of Flash support from Firefox.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="./assets/img/javascript-not-optimized.svg"
+            alt="Logo HTML, CSS E JS"
+          />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contact Me</legend>
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">last name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Your last name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your e-mail"
+              />
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+            <div class="form-group full-width">
+              <button type="submit">Send message</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer white-bg">
+      <p>
+        <a href="https://www.linkedin.com/in/rafael-falk/" target="_blank"
+          >Feito com <span class="heart">❤</span> por Rafael Falk
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
